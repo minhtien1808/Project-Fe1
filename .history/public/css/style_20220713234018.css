@@ -924,6 +924,6 @@ figcaption .content-block p {
     margin-top: 5px;
   }
   .footer .col-lg-4 {
-    margin-top: 0;
+    /* margin-top: 150px; */
   }
 }

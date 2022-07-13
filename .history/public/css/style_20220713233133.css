@@ -882,7 +882,6 @@ figcaption .content-block p {
   }
   section#partners {
     padding-top: 80px;
-    padding-bottom: 60px;
   }
   .addon-table__td {
     border-right: 1px solid #eee;
@@ -894,9 +893,7 @@ figcaption .content-block p {
   .footer {
     position: static !important;
   }
-  .main-page {
-    margin-bottom: 0px;
-  }
+
   .footer-fixed .footer {
     position: static;
   }
@@ -922,8 +919,5 @@ figcaption .content-block p {
     width: 100%;
     display: block;
     margin-top: 5px;
-  }
-  .footer .col-lg-4 {
-    margin-top: 0;
   }
 }

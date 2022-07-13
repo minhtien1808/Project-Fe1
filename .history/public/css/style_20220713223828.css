@@ -791,10 +791,10 @@ figcaption .content-block p {
   text-decoration: none;
   color: #75dab4;
 }
-/* responsive */
+/* reponsive */
 @media only screen and (max-width: 767px) {
   .left-side .lines-left {
-    margin: 120px 15px;
+    margin: 155px 30px;
   }
   .left-side {
     padding-bottom: 13px;
@@ -802,11 +802,7 @@ figcaption .content-block p {
   .section-title h2 {
     font-size: 8vw;
   }
-  .text-content-block p {
-    font-size: 1.6rem;
-    font-weight: 300;
-    margin-bottom: 35px;
-  }
+
   .all-cases .inner {
     padding-left: 100px;
   }
@@ -835,7 +831,7 @@ figcaption .content-block p {
     padding: 70px 0;
   }
   .wrapper-slide {
-    padding: 0 15px;
+    padding: 0 60px;
   }
   .carousel-inner {
     position: relative;
@@ -843,87 +839,14 @@ figcaption .content-block p {
     overflow: hidden;
     margin-left: 0 !important;
   }
-  .block-inner {
-    margin-top: 0px;
-    width: 100%;
-  }
   .text-center {
-    padding: 0 90px;
+    padding: 0 26%;
   }
   #icon-main-content {
     padding: 50px 0px;
   }
-  #images {
-    padding-top: 80px;
-  }
-  .caption-work a {
-    font-size: 8vw;
-  }
-  .warp {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 40px;
-  }
-  .bottom-images {
-    margin-top: 10px;
-  }
-  .shortest {
+  block-inner {
     margin-top: 0px;
-  }
-  .medium-short {
-    margin-top: 0px;
-  }
-  .partner-left {
-    font-size: 8vw;
-    padding-bottom: 34px;
-  }
-  br {
-    display: none;
-  }
-  section#partners {
-    padding-top: 80px;
-    padding-bottom: 60px;
-  }
-  .addon-table__td {
-    border-right: 1px solid #eee;
-    padding: 40px 15px;
-  }
-  .addon-table__td img {
-    height: 25px;
-  }
-  .footer {
-    position: static !important;
-  }
-  .main-page {
-    margin-bottom: 0px;
-  }
-  .footer-fixed .footer {
-    position: static;
-  }
-
-  .footer .call-to-action {
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-
-  .footer .call-to-action h6 {
-    font-size: 5vw;
-  }
-
-  .footer .call-to-action h2 {
-    font-size: 7vw;
-  }
-
-  .footer .call-to-action h2 br {
-    display: none;
-  }
-
-  .footer .footer-bar .creation {
-    width: 100%;
-    display: block;
-    margin-top: 5px;
-  }
-  .footer .col-lg-4 {
-    margin-top: 0;
+    width: 0px;
   }
 }
