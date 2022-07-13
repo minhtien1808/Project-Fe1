@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourog</title>
+    <link rel="stylesheet" href="./public/css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="warrper">
+        <div class="left-side">
+            <div class="logo">
+                <a href="#"><img src="./public/image/logo.png" alt=""></a>
+            </diV>
+            <div class="lines-left">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                    <li> <a href="#"><i class="fab fa-behance"></i> </a> </li>
+                    <li> <a href="#"><i class="fab fa-github"></i> </a> </li>
+                    <li> <a href="#"><i class="fab fa-youtube"></i> </a> </li>
+                </ul>
+            </div>
+            <div class="equalizer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="top-nav">
+            <div class="all-cases-link"><span>ALL CASES</span><b class="">+</b> </div>
+        </div>
+    </div>
+    <div class="main-page">
+        <div class="header-section">
+            <div class="header-container">
+                <div class="hearder-container-inner">
+                    <header class="video-hero">
+                        <div class="video-bg">
+                            <video src="./public/image/slide02.mp4" muted="" autoplay="" loop="" playsinline=""></video>
+                        </div>
+                        <div class="content-inner">
+                            <h1>DISCOVER</h1>
+                            <a href="#">DISCOVER CASE</a>
+                        </div>
+                        <div class="scrolldown"> <a href="#">SCROLL DOWN</a> </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="call-to-action">
+                        <h6>LET’S HAVE A TALK ABOUT YOUR PROJECT.</h6>
+                        <h2>Need more information or wantto get in touch?</h2>
+
+                        <div class="link-holder"> <a href="#" class="link">Get in touch</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget_text widget footer-widget">
+                        <h2 class="widget-title">Address</h2>
+                        <div class="textwidget custom-html-widget">
+                            <address>
+                                <p>26 str Burdeau 69001<br>
+                                    London UK
+                                </p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="widget_text widget footer-widget">
+                        <h2 class="widget-title">Phone</h2>
+                        <div class="textwidget custom-html-widget">
+                            <address>
+                                <p>+38 044 364 55 19</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="widget_text widget footer-widget">
+                        <h2 class="widget-title">Reach us</h2>
+                        <div class="textwidget custom-html-widget">
+                            <address>
+                                <p><a href="#">hello@tourog.co.uk</a></p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-bottom"> <span>© 2021 Tourog - All rights reserved.</span>
+                        <span class="creation">Site created by <a href="https://themezinho.net/">Themezinho</a></span>
+                    </div>
+                    <!-- end footer-bottom -->
+                </div>
+                <!-- end col-12 -->
+            </div>
+            <!-- end row -->
+        </div>
+    </footer>
+    <script>
+        const equalizer = document.querySelectorAll('span');
+        let getRandomIntInclusive = (min, max) => {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+        }
+        let changePosition = () => {
+            equalizer.forEach((item) => {
+                item.style.height = getRandomIntInclusive(0, 20) + 'px';
+            })
+        }
+        let stopGame = () => {
+            clearInterval(a)
+        }
+        setInterval(changePosition, 500);
+        setTimeout(stopGame, 10000)
+    </script>
+</body>
+
+</html>
